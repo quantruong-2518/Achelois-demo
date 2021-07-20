@@ -1,0 +1,169 @@
+body {
+  outline: none !important;
+  font-size: 16px;
+  padding: 0 2rem;
+  color: white;
+  font-family: "Belleza", sans-serif;
+  background: -webkit-gradient(linear, left top, right top, color-stop(100%, #c49386), color-stop(18%, #e7c1b7), to(#c49386));
+  background: linear-gradient(90deg, #c49386 100% #f1dfd4 0%, #e7c1b7 18%, #c49386 100%);
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem;
+}
+
+.container #header {
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 97%;
+  height: 3rem;
+}
+
+.container #header .logo {
+  font-weight: bold;
+  padding: 0;
+}
+
+.container #header .right-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.container #header .right-items .cart {
+  margin-left: 2rem;
+}
+
+.container #main {
+  margin-top: 5rem;
+  width: 50%;
+}
+
+.container #main .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container #main .content .branding-content {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 459px;
+  -webkit-box-shadow: 1px 1px 30px #57241d;
+          box-shadow: 1px 1px 30px #57241d;
+  width: 100%;
+  -webkit-transition: display 0.5s ease-in-out;
+  transition: display 0.5s ease-in-out;
+}
+
+.container #main .content .branding-content.hidden {
+  display: none;
+}
+
+.container #main .btn-go_to_order {
+  margin: 5rem 0;
+}
+
+.container #footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container #footer .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.container #footer .footer-top > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container #footer .footer-top > * > :not(:first-child) {
+  font-size: 12px;
+  margin-bottom: 0.25rem;
+}
+
+.container #footer .footer-bottom {
+  width: 30%;
+  margin: 5rem 0 2rem 0;
+  text-align: center;
+}
+
+.navbar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 5rem;
+  left: 2rem;
+  text-transform: uppercase;
+}
+
+.navbar > * {
+  margin-bottom: 0.25rem;
+}
+/*# sourceMappingURL=styles.css.map */

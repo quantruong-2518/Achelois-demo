@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achelois</title>
+
+    <!-- links  -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belleza&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER  -->
+      <header id="header">
+        <h1 class="logo">Achelois</h1>
+
+        <div class="right-items">
+          <a href="" class="user-account">My account</a>
+          <a href="" class="cart">Cart (0)</a>
+        </div>
+      </header>
+
+      <!-- CONTENT  -->
+      <div id="main">
+        <div class="content">
+          <img
+            src="assets/images/achelois_cover.jpg"
+            alt="cover"
+            class="branding-content"
+          />
+          <img
+            src="assets/images/image2.jpg"
+            alt="cover"
+            class="branding-content"
+          />
+          <img
+            src="assets/images/image3.jpg"
+            alt="cover"
+            class="branding-content"
+          />
+
+          <a class="btn-go_to_order">Now available to order</a>
+        </div>
+      </div>
+
+      <!-- FOOTER  -->
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="information">
+            <h3>INFORMATION</h3>
+            <div class="return">SHIPPING & RETURNS</div>
+            <div class="term">TERMS & CONDITIONS</div>
+            <div class="pivacy">PRIVACY</div>
+          </div>
+          <div class="contact">
+            <h3>CONTACT</h3>
+            <div class="customer-services">CUSTOMER SERVICES</div>
+            <div class="wholesale">WHOLESALE AND PRESS</div>
+          </div>
+          <div class="social">
+            <h3>SOCIAL</h3>
+            <a href="" class="facebook">FACEBOOK</a>
+            <a href="" class="instagram">INSTAGRAM</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2018 SUBTLE STUDIOS ALL RIGHTS RESERVED.</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Absolute navbar  -->
+    <div class="navbar">
+      <a href="" class="home">home</a>
+      <a href="" class="shop">shop</a>
+      <a href="" class="coll">collections</a>
+      <a href="" class="stockists">stockists</a>
+      <a href="" class="about">about</a>
+      <a href="" class="contact">contact</a>
+    </div>
+
+    <script>
+      const images = document.getElementsByClassName("branding-content");
+      let lastIndexValue = 0;
+      let isDiff = true;
+
+      // random 1 visible image
+      setInterval(() => {
+        const randomIndex = Math.floor(Math.random() * 2);
+
+        [].forEach.call(images, (img, index) => {
+          img.classList.toggle("hidden", index !== randomIndex);
+        });
+      }, 2000);
+    </script>
+  </body>
+</html>
