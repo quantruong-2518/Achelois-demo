@@ -63,20 +63,11 @@ a {
       align-items: center;
 
       .branding-content {
-        display: none;
         object-fit: cover;
         max-height: 459px;
         box-shadow: 1px 1px 30px #57241d;
         width: 100%;
         transition: display 0.5s ease-in-out;
-
-        &.hidden {
-          display: none;
-        }
-
-        &.visible {
-          display: flex;
-        }
       }
     }
 
