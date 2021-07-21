@@ -83,6 +83,7 @@ a {
 }
 
 .container #main .content .branding-content {
+  display: none;
   -o-object-fit: cover;
      object-fit: cover;
   max-height: 459px;
@@ -95,6 +96,12 @@ a {
 
 .container #main .content .branding-content.hidden {
   display: none;
+}
+
+.container #main .content .branding-content.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container #main .btn-go_to_order {

@@ -98,7 +98,7 @@
         const randomIndex = Math.floor(Math.random() * 2);
 
         [].forEach.call(images, (img, index) => {
-          img.classList.toggle("hidden", index !== randomIndex);
+          img.classList.toggle("visible", index === randomIndex);
         });
       }, 2000);
     </script>
